@@ -28,10 +28,10 @@ func Pic(dx, dy int) (pic [][]uint8) {
 	pic = make([][]uint8, dy)
 	f := funcs[rand.Intn(3)]
 
-	for y := 0; y < dy; y++ {
+	for y := range pic {
 		pic[y] = make([]uint8, dx)
 
-		for x := 0; x < dx; x++ {
+		for x := range pic[y] {
 			pic[y][x] = f(x, y)
 		}
 	}
