@@ -1,3 +1,5 @@
+// https://go.dev/tour/generics/2
+
 package main
 
 import "fmt"
